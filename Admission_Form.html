@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <h3>Using CSS to style an HTML Form</h3>
+
+    <div>
+      <form action="/action_page.php">
+        <label>Student Name</label>
+        <input type="text" id="s-name" placeholder="Your name.." />
+
+        <label>Student Identification Number(SIN)</label>
+        <input type="text" id="i-no" placeholder="Your identification no.." />
+
+        <label>Admission Seeking From</label>
+        <input
+          type="number"
+          id="s-no"
+          placeholder="Enter your admission seeking no.."
+        />
+        <br /><br />
+        <label>Visited Date</label>
+        <input
+          type="date"
+          id="v-date"
+          placeholder="Enter your visited date.."
+        />
+        <br /><br />
+        <label>Admitted Date</label>
+        <input
+          type="date"
+          id="a-date"
+          placeholder="Enter your admitted date.."
+        />
+        <br /><br />
+        <label>Referral</label>
+        <select id="referral">
+          <option value="direct">Direct</option>
+          <option value="faculty">Faculty</option>
+          <option value="student">Student</option>
+          <option value="consultant">Consultant</option>
+          <option value="other">Other</option>
+        </select>
+        <br /><br />
+        <label>Engineering Autonomous (Both Male/Female)</label>
+        <select id="ea">
+          <option value="it">B.Tech-Information Technology</option>
+          <option value="aids">
+            B.Tech-Artifical Intelligence & Data Science
+          </option>
+          <option value="agri">B.Tech-Agricultural Engineering</option>
+          <option value="cse">B.E-Computer Science & Engineering</option>
+          <option value="ece">B.E-Electronics & Communication</option>
+          <option value="mech">B.E-Mechanical Engineering</option>
+          <option value="bme">B.E-Biomedical Engineering</option>
+          <option value="ece">B.E-Electronics & Communication</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
